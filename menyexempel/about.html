@@ -1,107 +1,137 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Exempel 1 navigation bar</title>
-        <meta charset = "utf-8" />
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href = "css/navigation.css" rel="stylesheet"
-        type="text/css" />
+<title>Exempel 1 navigation bar</title>
+<meta charset = "utf-8" />
+<link href = "css/navigation.css" rel="stylesheet" type="text/css" />
 
-    </head>
+<style>
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: rgb(165, 87, 117);}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+</style>
+</head>
 <body>
-    <!--wrapper börjar-->
-    <div class="wrapper">
+
+<ul class="topnav">
+  <li><a class="active" href="#home">Hem</a></li>
+  <li><a href="#news">Nyheter</a></li>
+  <li><a href="#contact">Kontakt</a></li>
+  <li class="right"><a href="#about">Om</a></li>
+</ul>
+
+
+<!--wrapper börjar-->
+    <div style="padding:0 16px;" class="wrapper">
     <header class="header">
         <h1>Min första hemsida</h1>
     </header>
     <header class="mainmenu">
-        <u1>
-            <li>>a href="home.html">Hem</a></li>
-            <li>a href="news.html">Nyheter</a></li>
-            <li>a href="contacts.html">Kontakt</a></li>
-            <li>a href="about.html">Om</a></li>
-        </u1>
+   
     </header>
-
     <div class="wrapper_2col">
     <div class="leftcol">
-  
-        <p>
-        
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id erat
+      et elit blandit lobortis a a neque. Fusce lacus nisi, vulputate quis vulputate
+      vel, aliquam vitae libero. Sed congue ligula quis turpis tincidunt ut
+      ultrices ante feugiat. Sed semper tortor fermentum ligula fringilla tristique.
+      Mauris lacinia venenatis commodo. Curabitur scelerisque pharetra facilisis.
+      Donec et iaculis nunc. Curabitur rhoncus iaculis diam, rutrum faucibus
+      magna cursus in. Vestibulum eu consectetur magna.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a augue id
+        leo scelerisque hendrerit non non dui. Integer condimentum quam sed tellus
+        ultricies a aliquam elit ornare. Curabitur ac libero et sapien feugiat
+        porta vitae sed lorem. In faucibus imperdiet neque, sit amet accumsan
+        ante elementum tincidunt. Proin tincidunt massa at leo tincidunt consectetur.
+        Sed consectetur ornare libero a sagittis. Pellentesque aliquet ipsum ante.
+        Sed eget tellus dui, eget sodales lectus.
+      </p>
+    </div><!--leftcol slutar-->
+    <div class="rightcol">
+      <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id erat
-            
-            et elit blandit lobortis a a neque. Fusce lacus nisi, vulputate quis vulputate
+        et elit blandit lobortis a a neque. Fusce lacus nisi, vulputate quis vulputate
+        vel, aliquam vitae libero. Sed congue ligula quis turpis tincidunt ut
+        ultrices ante feugiat. Sed semper tortor fermentum ligula fringilla tristique.
+        Mauris lacinia venenatis commodo. Curabitur scelerisque pharetra facilisis.
+        Donec et iaculis nunc. Curabitur rhoncus iaculis diam, rutrum faucibus
+        magna cursus in. Vestibulum eu consectetur magna.
+      </p>
+      <p><img src="img/andreas.jpg" height="300" width="201" alt="Foto" />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a augue id
+        leo scelerisque hendrerit non non dui. Integer condimentum quam sed tellus
+        ultricies a aliquam elit ornare. Curabitur ac libero et sapien feugiat
+        porta vitae sed lorem. In faucibus imperdiet neque, sit amet accumsan
+        ante elementum tincidunt. Proin tincidunt massa at leo tincidunt consectetur.
+        Sed consectetur ornare libero a sagittis. Pellentesque aliquet ipsum ante.
+        Sed eget tellus dui, eget sodales lectus.
+      </p>
+      <div class="push"></div>
+    </div><!--rightcol slutar-->
+    </div><!--wrapper2col slutar-->
+    <footer class="footer">
+      <p>All rights reserved - &#169; Copyright</p>
+    </footer>
+    </div><!--wrapper slutar-->
 
-            vel, aliquam vitae libero. Sed congue ligula quis ligula fringilla tristique.
+    <table class="table-simple"> 
+      <caption>Members and their ages</caption>
 
-            ultrices ante feugiat. Sed semper tortor fermentum ligula fringilla tristique.
-
-            Mauris lacinia venenatis commodo. Curabitur scelerisque pharetra facilisis.
-
-            Donec et iaculis nunc. Curabitus rhoncus iaculis diam, rutrum faucibus
-
-            magna cursus in. Vestibulum eu consectetur magna.
-        </p>
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a augue id
-
-                leo scelerisque hendrerit non non dui. Integer condimentum quam sed tellus
-
-                ultricies a aliquam elit ornare. Curabitur ac libero et sapien feugiat
-
-                porta vitae sed lorem. In faucibus imperdiet neque, sit amet accumsan
-
-                ante elementum tincidunt. Proin tincidunt massa at leo tincidunt consectetur.
-
-                Sed consectetur ornare libero a sagittis. Pellentesque aliquet ipsum ante.
-
-                    Sed eget tellus dui, eget sodales lectus.
-              </p>
-            </div><!--leftcol slutar-->
-            <div class="rightcol">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id erat
-
-                et elit blandit lobortis a a neque. Fusce lacus nisi, vulputate quis vulputate
-
-                vel, aliquam vitae libero. Sed congue ligula quis turpis tincidunt ut
-
-                ultrices ante feugiat. Sed semper tortor fermentum ligula fringilla tristique.
-
-                Mauris lacinia venenatis commodo. Curabitur scelerisque pharetra facilisis.
-
-                Donec et iaculis nunc. Curabitur rhoncus iaculis diam, rutrum faucibus
-
-                magna cursus in. Vestibulum eu consectetur magna.
-              </p>
-
-              <p><img src="img/andreas.jpg" height="300" width="201" alt="Foto" />
-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a augue id
-
-                leo scelerisque hendrerit non non dui. Integer condimentum quam sed tellus
-
-                ultricies a aliquam elit ornare. Curabitur ac libero et sapien feugiat
-
-                porta vitae sed lorem. In faucibus imperdiet neque, sit amet accumsan
-
-                ante elementum tincidunt. Proin tincidunt massa at leo tincidunt consectetur.
-
-                Sed consectetur ornare libero a sagittis. Pellentesque aliquet ipsum ante.
-
-                Sed eget tellus dui, eget sodales lectus.
-              </p>
-
-              <div class="push"></div>
-            </div><!--rightcol slutar-->
-            </div><!--wrapper2col slutar-->
-
-            <footer class="footer">
-              <p>All rights reserved - &#169; Copyright</p>
-            </footer>
-            
-            </div><!--wrapper slutar-->
-          </body>
-        </html>
-        
+      <tr> 
+           <th>First Name</th> 
+           <th>Last Name</th> 
+           <th>Age</th> 
+       </tr> 
+       <tr> 
+           <td>Annie</td> 
+           <td>Cat</td> 
+           <td>5000</td> 
+       </tr> 
+       <tr> 
+           <td>Bingus</td> 
+           <td>Cat</td> 
+           <td>1</td> 
+       </tr> 
+       <tr> 
+           <td>Panko</td> 
+           <td>Cat</td> 
+           <td>4</td>
+       </tr> 
+       <tr>
+        <td>Anna</td> 
+        <td>Karlsson</td>
+        <td>35</td>
+       </tr>
+   </table> 
+   <br> 
+  </body>
+</html>

@@ -3,7 +3,13 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(75, 14, 32);
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    margin-top: 60px;
+    border-bottom: 4px solid rgb(75, 14, 32);
 }
 
 li {
@@ -18,4 +24,53 @@ li a {
     text-decoration: none;
 }
 
+p {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 20px;
+  }
+
+li a:hover {
+    background-color: rgb(165, 87, 117);
+    text-decoration: underline;
+}
 ul {position: fixed; top: 0; width: 100%;}
+
+table, td, th { 
+    border: 1px solid black; 
+  } 
+  table { 
+     border-collapse: collapse;
+  } 
+
+  th, td {
+      padding: 5px;
+  }
+
+  td {
+      text-align: center;
+  }
+
+  caption {
+    caption-side: top; 
+    text-align: center; 
+    font-style: italic; 
+    font-weight: bold; 
+    color: rgb(75, 14, 32); 
+  } 
+
+  .table-simple th {
+    background-color: rgb(75, 14, 32); 
+    color: white; 
+  } 
+
+  .table-simple tr:nth-child(even) { 
+    background-color: #e2e2ff; 
+  } 
+
+  .table-simple tr:nth-child(odd) { 
+    background-color:#ffe3ef; 
+  } 
+  
+  .table-simple tr:hover { 
+    background-color: #b48295; 
+  } 
