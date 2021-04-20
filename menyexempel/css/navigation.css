@@ -74,3 +74,34 @@ table, td, th {
   .table-simple tr:hover { 
     background-color: #b48295; 
   } 
+
+  .scroll-bar {
+    overflow-x: auto;
+    height: 300%;
+  }
+
+.scroll-bar th, td {
+  color: rgb(197, 103, 119);
+  vertical-align: middle;
+}
+
+.many-columns {
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.15);
+  margin-bottom: 10px;
+}
+
+.table-image {
+  margin: 0 auto;
+}
+
+.table-image th, td{
+  padding: 10px;
+}
+
+.table-image {
+  background-color: rgb(250, 226, 250);
+}
+
+.quacktable {
+  margin: 10px;
+}
